@@ -119,7 +119,7 @@ Static Function PrintReport(oReport, dDataDe, dDataAte)
 	cQuery += " WHERE SD3.D3_XMOTREJ <> '' "
 	cQuery += "   AND SD3.D3_EMISSAO BETWEEN '" + DToS(dDataDe) + "' AND '" + DToS(dDataAte) + "' "
 	cQuery += "   AND SD3.D3_ESTORNO <> 'S' "
-	cQuery += "   AND SD3.LOTECTL <> ' '"
+	cQuery += "   AND SD3.D3_LOTECTL <> ' '"
 	cQuery += "   AND SD3.D_E_L_E_T_ <> '*' "
 	cQuery += " ORDER BY SD3.D3_FILIAL, SD3.D3_EMISSAO, SD3.D3_LOTECTL, SD3.D3_COD "
 
